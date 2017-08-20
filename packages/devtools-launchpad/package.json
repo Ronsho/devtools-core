@@ -99,6 +99,7 @@
   },
   "devDependencies": {
     "@kadira/storybook": "^2.35.3",
+    "husky": "^0.14.3",
     "ipaddr": "^0.0.9",
     "jest": "^19.0.2",
     "yarn": "^0.20.3"
@@ -115,8 +116,14 @@
   ],
   "jest": {
     "rootDir": "src",
-    "testMatch": ["**/tests/**/*.js"],
-    "testPathIgnorePatterns": ["/node_modules/"],
-    "transformIgnorePatterns": ["node_modules/(?!devtools-)"]
+    "testMatch": [
+      "**/tests/**/*.js"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!devtools-)"
+    ]
   }
 }
